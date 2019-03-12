@@ -1,0 +1,112 @@
+:root {
+  --dc-: #28a745;
+  --gr-: #515151;
+  --wh-: #fefefe;
+  --sg-: #f7f7f7;
+  --lg-: #edede8;
+  --shadow1-: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  --shadow2-: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+  --ts-: 2px 5px 2px rgba(33, 33, 33, 0.25)
+}
+
+.fa-code {
+  color: var(--dc-)
+}
+
+.center {
+  width: 50%;
+  margin: 25vh auto 0 auto;
+  text-align: center
+}
+
+.center p:last-child {
+  margin: 1em auto 2em;
+  font-family: Roboto;
+  font-size: 1.2em;
+  color: var(--dc-);
+  background: rgba(255, 255, 255, .8);
+  width: 170px;
+  padding: .5em 1em;
+  border-radius: 1em
+}
+
+.brand {
+  color: var(--gr-);
+  font-family: Roboto;
+  font-size: 3em;
+  text-shadow: var(--ts-);
+  margin: 0 auto;
+  padding: 0
+}
+
+.slogan {
+  color: var(--gr-);
+  font-family: Roboto;
+  font-size: 1.2em;
+  text-shadow: var(--ts-);
+  margin: 0 auto;
+  padding: 0
+}
+
+body {
+  background: url(../img/img_05.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Roboto
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes animatetop {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+#element {
+  background: var(--wh-);
+  color: var(--dc-);
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: var(--shadow2-);
+  border-radius: 5px
+}
+
+#element i {
+  margin-top: 30px;
+  color: var(--dc-)
+}
+
+.dragNdrop::before {
+  content: 'Drag this!';
+  display: block;
+}
+
+.dragNdrop--start::before {
+  content: 'Start';
+  display: block;
+}
+
+.dragNdrop--drag::before {
+  content: 'Drag';
+  display: block;
+}
+
+.dragNdrop--stop::before {
+  content: 'Stop';
+  display: block;
+}
